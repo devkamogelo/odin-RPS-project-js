@@ -38,6 +38,7 @@ function playGame(){
     
     while (gamesPlayed <= 5){
         playRound(getComputerChoice(), getHumanChoice())
+        gamesPlayed++
     }
 
     if (computerScore > humanScore){
