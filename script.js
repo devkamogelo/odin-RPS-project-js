@@ -34,7 +34,7 @@ function playRound(computerChoice, humanChoice){
 }
 
 function playGame(){
-    var gamesPlayed = 0;
+    var gamesPlayed = 1;
     
     while (gamesPlayed <= 5){
         playRound(getComputerChoice(), getHumanChoice())
@@ -46,6 +46,7 @@ function playGame(){
         console.log(draws + " draws.")
     } else {
         console.log("You win! " + humanScore + " : " + computerScore);
+        console.log(draws + " draws.")
     }
 }
 
