@@ -5,12 +5,10 @@
     padding: 0;
     font-family: 'Inter', sans-serif;
 }
-
 body{
-    
     display: flex;
     height: 100vh;
-    
+    background-color: #0b405a;
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -18,10 +16,13 @@ body{
 
 .results{
     padding: 25px;
+    color: #ffffff;
     text-align: center;
 }
 
 button {
+    color: #ffffff;
     padding: 8px 16px;
     font-size: 18px;
 }
+
