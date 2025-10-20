@@ -15,6 +15,8 @@ function getHumanChoice() {
     return choice.toLowerCase()
 }
 
+
+
 var humanScore = 0
 var computerScore = 0
 var draws = 0
@@ -33,21 +35,22 @@ function playRound(computerChoice, humanChoice){
     }
 }
 
-function playGame(){
-    var gamesPlayed = 1;
-    
-    while (gamesPlayed <= 5){
-        playRound(getComputerChoice(), getHumanChoice())
-        gamesPlayed++
-    }
 
-    if (computerScore > humanScore){
-        console.log("Computer wins. " + computerScore + " : " + humanScore)
-        console.log(draws + " draws.")
-    } else {
-        console.log("You win! " + humanScore + " : " + computerScore);
-        console.log(draws + " draws.")
-    }
-}
+// function playGame(){
+//     var gamesPlayed = 1;
+    
+//     while (gamesPlayed <= 5){
+//         playRound(getComputerChoice(), getHumanChoice())
+//         gamesPlayed++
+//     }
+
+//     if (computerScore > humanScore){
+//         console.log("Computer wins. " + computerScore + " : " + humanScore)
+//         console.log(draws + " draws.")
+//     } else {
+//         console.log("You win! " + humanScore + " : " + computerScore);
+//         console.log(draws + " draws.")
+//     }
+// }
 
 playGame()
